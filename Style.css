@@ -1,0 +1,665 @@
+
+:root{
+    --orange: #FFBB64;
+}
+
+#logo{
+    margin:0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    outline: none; border: none;
+    text-decoration: capitalize;
+    transition: 2s linear;
+
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    margin-left: 2.5rem;
+    border-radius: 5rem;
+    background: #FFBB64;
+    color: #ffffff;
+    padding: 2rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    box-shadow: 0 .5rem 2rem rgb(100, 100, 100);
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.5s;
+}
+
+.btn:hover{
+    background: #333;
+} 
+
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background:#ffffff;
+    padding: 1rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgb(179, 179, 179);
+}
+
+header .logo{
+    font-size: 3rem;
+    color: #FF407D;
+    font-weight: bolder;
+}
+
+header .logo span{
+    color:var(--orange);
+    size: 1rem;
+}
+
+
+header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #666;
+    transition: background-color 0.5s ;
+    text-decoration: none;
+}
+
+header .navbar a:hover{
+    color: var(--orange);
+    transition: 0.3s;
+}
+
+
+.home{
+    display: flex;
+    position: relative;
+    padding-left: 5rem;
+    /* width: 100%; */
+    align-items: center;
+    min-height: 100vh;
+    background: url(Images/cesa1.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.home .content{
+    max-width: 50rem;
+}
+
+.home .content h3{
+    padding-left: 3rem;
+    font-size: 6rem;
+    color: #333;
+
+}
+
+.home .content span{
+    font-weight: bolder;
+    font-size: 6rem;
+    color: #FF407D;   
+    padding: 1rem 0;
+    line-height: 0;
+    font-style: italic;
+}
+
+.home .content p{
+    text-align: justify;
+    font-weight: 500;
+    padding-left: 3rem;
+    width: 100%;
+    font-size: 2rem;
+    color: #333;  
+    line-height: 1.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about{
+    align-items: center;
+    width: 100%;
+    background-color: #FFEECC;
+    gap: 4rem;
+}
+
+.about .aboutme{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 3rem 0;
+    padding-bottom: 3rem;
+}
+
+
+.about .aboutme img{
+    margin-left: 5rem;
+    height: auto;
+    width: 350px;
+    border-radius: 10rem;
+    border: 1,5rem #ffffff;
+    box-shadow: 0 .5rem 2rem rgb(100, 100, 100);
+    object-fit: cover;
+}
+
+
+.about .aboutme .content{
+    flex: 2 2 35rem;
+}
+
+.about .aboutme .content p{
+    width: 80%;
+    margin-left: 3rem;
+    text-align: justify;
+    padding: 2rem 1rem 0 0; 
+    font-size:1.7rem;
+    color: #333;
+    line-height: 30px;
+    margin-bottom: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.about .aboutme .content h2{
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin-left: 3rem;
+    border-bottom: 2px solid #FFACAC;
+    font-size: 4rem;
+}
+
+#contactme{
+    display: inline-block;
+    border-radius: 5rem;
+    background: linear-gradient(#FFACAC, #FFBB64);
+    color: #ffffff;
+    padding: 2rem 3rem;
+    cursor: pointer;
+    font-size: 2rem;
+    box-shadow: 0 .5rem 2rem rgb(100, 100, 100);
+    font-weight: bolder;
+}
+
+#contactme:hover{
+    background: #333;
+} 
+
+.skill{
+    background-color: #ffffff;
+}
+
+.title-skill{
+    text-align: center;
+}
+
+.title-skill span{
+    color: #FFBB64;
+}
+
+.title-skill h2{
+    /* text-align: center; */
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    border-bottom: 2px solid #FFACAC;
+    font-size: 4rem;
+}
+
+.skill-items{
+    display: flex;
+    min-height: 400px;
+    align-items: center;
+    gap: 6rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.skill-box{
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    padding: 40px 35px;
+    background: linear-gradient(#FFE5E5, #FFEECC);
+    border-radius: 2rem;
+    border: 1px solid #FFACAC;
+    cursor: pointer;
+    margin: 20px;
+    transition: all ease .50s;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1rem rgb(100, 100, 100);
+}
+.skill i{
+    font-size: 45px;
+    color: #FF407D;
+    margin-bottom: 1rem;
+}
+
+.skill h3{ 
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.skill p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    font-size: 1.5rem;
+}
+
+
+.tools h3{
+    color: #FF407D;
+    font-size: 2.5rem;
+    padding: 3rem;
+}
+
+.tools span{
+    color: hsl(0, 0%, 20%);
+}
+
+
+.porto h2{
+    color: #FF407D;
+    font-size: 2.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1rem 3rem ;
+}
+
+.porto h3{
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 3rem;
+    border-bottom: 2px solid #FFB84C;
+}
+
+.porto span{
+    color: #333;
+}
+
+
+.porto .porto-design{
+    margin: 4rem;
+    align-items: center;
+    display: flex;
+    grid-gap: 10px;
+    justify-content: center;
+    background: linear-gradient(#FFE5E5, #FFEECC);
+    border-radius: 2rem;
+
+}
+
+.porto .porto-design img{
+    width: 300px;
+    height: auto;
+    margin: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 .5rem 1rem rgb(100, 100, 100);
+}
+
+.porto .porto-tari{
+    margin: 4rem;
+    align-items: center;
+    display: flex;
+    grid-gap: 10px;
+    justify-content: center;
+    background: linear-gradient(#FFE5E5, #FFEECC);
+    border-radius: 2rem;
+
+}
+
+.porto .porto-tari img{
+    width: 250px;
+    height: auto;
+    margin: 2rem 1rem;
+    border-radius: 2rem;
+    box-shadow: 0 .5rem 1rem rgb(100, 100, 100);
+}
+
+.porto .porto-photo{
+    margin: 4rem;
+    align-items: center;
+    display: flex;
+    grid-gap: 10px;
+    justify-content: center;
+    background: linear-gradient(#FFE5E5, #FFEECC);
+    border-radius: 2rem;
+
+}
+
+.porto .porto-photo img{
+    width: 250px;
+    height: auto;
+    margin: 2rem 1rem;
+    border-radius: 2rem;
+    box-shadow: 0 .5rem 1rem rgb(100, 100, 100);
+}
+
+
+.icontools img{
+    height: auto;
+    width: 100px;
+}
+
+.certificate{
+    display: flex;
+    background-color: #FFE5E5;
+    padding: 3rem;
+}
+
+.tittle-serti{
+    margin-top: 3rem;
+    padding-left: 2rem;
+    text-align: left;
+}
+
+.tittle-serti h2{
+    font-size: 4rem;
+    color: #FF407D;
+    margin: 1rem;
+}
+.tittle-serti h3{
+    font-size: 4rem;
+    color: #FFB84C;
+    margin: 1rem;
+}
+
+.certificate .foto-serti{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    padding-left: 15rem;
+}
+
+.certificate .foto-serti img{
+    float: right;
+    border-radius: 5rem;
+    width: 350px;
+    height: auto;
+    padding: 2rem;
+}
+
+.button-skill{
+    margin-top: 2rem;
+    padding: 0.5rem;
+    display: flex;
+    border-radius: 5rem;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.button-skill a{
+    text-decoration: none;
+    padding: 8px 40px;
+    border: 2px solid transparent;
+    border-radius: 5rem;
+    background: #333;
+    color: #ffffff;
+    font-size: 2rem;
+    transition: background-color 0.5s;
+}
+
+.button-skill:hover a{
+    background: #FFBB64;
+}
+
+
+.title-contact h2{
+    margin-right: 4rem;
+    flex: auto;
+    font-size: 3rem;
+    color: #FFB84C;
+    text-align: center;
+}
+
+.title-contact span{
+    color: #FF407D;
+}
+
+.contact i{
+    /* display: flex; */
+    font-size: 45px;
+    color: #FF407D;
+    margin-bottom: 1rem;
+}
+
+.contact-icon{
+    /* padding-top: 20; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-icon a{
+    display: flex;
+    width: 30px;
+    text-align: center;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border-radius: 50%;
+    margin: 3rem;
+    padding: 2rem;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.2s;
+}
+
+.insta:hover{
+    background: #333;
+}
+.wa:hover{
+    background: #333;
+}
+
+.form {
+    margin-left: 31%;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(#FFE5E5, #FFEECC);
+}
+
+.form h2{
+    font-size: 3rem;
+    color: #333;
+    text-align: center;
+    margin: 3rem;
+
+}
+
+.email{
+    display: flex;
+    flex-direction: column;
+    margin-right: 50%;
+    gap: 10px;
+    font-weight: 500;
+}
+
+.email-input{
+    margin: 0;
+    align-items: center;
+    background: #ffffff;
+    width: 350px;
+    height: 50px;
+    border: 1px solid transparent;
+    padding-left: 20px;
+    font-weight: 500;
+    border-radius: 20px;
+}
+
+.email textarea{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.email-input:focus{
+    border: 2px solid #FF407D;
+}
+
+.email-input::placeholder{
+    color: #FF407D;
+}
+
+.email button{
+    align-items: center;
+    text-align: center;
+    margin: 1.5rem;
+    padding: 15px 30px;
+    font-size: 2rem;
+    color: #ffffff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: #333;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.email:hover button{
+    background: #FF407D;
+}
+
+
+
+
+
+
+
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding: 2rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+
+    .home{
+        background-position: left;
+    }
+}
+
+@media (max-width:768px){
+
+    .home{
+        background-size: 125%;
+    }
+
+    .section{
+        padding: 60px 4%;
+    }
+
+    header{
+        padding: 9px 4%;
+        transition: .2s;
+    }
+    
+    header .navbar a{
+        font-size: 1.5rem;
+    }
+
+    .home{
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .home .content h3{
+        font-size: 5rem;
+    }
+
+    .home .content span{
+        font-size: 5rem;
+    }
+
+    .about .content h2{
+        text-align: center;
+    }
+
+    .about .aboutme img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about .aboutme .content p{
+        width: 100%;
+        text-align: justify;
+    }
+
+
+
+    #contactme{
+        display: grid;
+        place-items: center;
+        margin-top: 4rem;
+    }
+
+    .skill h3{
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+    .skill p{
+        font-size: 1rem;
+    }
+
+    .skill-box{
+        position: relative;
+        height: 250px;
+        width: 700px;
+        padding: 10px 20px;
+    }
+
+    .certificate .foto-serti  img{
+        display: block;
+    }
+
+}
+
+@media (max-width:450){
+
+    html{
+        font-size: 50%;
+    }
+
+    .heading{
+        font-size: 3rem;
+    }
+
+    .home{
+        background-size: 150%;
+        background-position: left;
+    }
+
+    .edu{
+        font-size: 2rem;
+    }
+}
